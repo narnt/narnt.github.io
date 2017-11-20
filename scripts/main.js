@@ -39,3 +39,18 @@ let slider = function() {
         console.log(i);
     })
 }
+
+function hiding(func, sec) {
+    var start = Date.now();
+    document.querySelector("body").style.opacity = 1;
+    setInterval(function() {
+        var timePassed = Date.now() - start;
+
+        if (document.querySelector("body").style.opacity <= 0) {
+            clearInterval(hiding);
+            return func();
+        }
+        document.querySelector("body").style.opacity = document.querySelector("body").style.opacity - 0.05;
+        console.log(document.querySelector("body").style.opacity);
+    }, sec)
+}

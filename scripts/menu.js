@@ -1,38 +1,25 @@
-var audio = document.createElement("audio");
-var canPlayMmp3 = !!audio.canPlayType && audio.canPlayType('audio/mp3') != "";
-if(!canPlayMmp3) {
- audio.src = "../music/pad.ogg";
-}
-  audio.src = "../music/pad.mp3";
-  audio.loop = true;
-  audio.play();
-  function fading() {
-      var timer = setInterval(function() {audio.volume=audio.volume-0.01;
-        if(audio.volume<=0.01){
-          clearInterval(timer);
-        }
-      }, 30);
-    };
-$(document).ready(function(){
-  $("#b1").click(function(event){
-    fading();
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(5000, function(){window.location = 'chapters.html'});
-	});
+audioContent('pad', true);
 
-  $("#b2").click(function(event){
-    fading();
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(5000, function(){window.location = 'app.html'});
-	});
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector("#b1").addEventListener('click', function(event) {
+        fading();
+        event.preventDefault();
+        linkLocation = this.href;
+        hiding(function() { window.location = 'chapters.html' }, 100);
+    });
 
-  $("#b3").click(function(event){
-    fading();
-		event.preventDefault();
-		linkLocation = this.href;
-		$("body").fadeOut(5000, function(){window.location = 'music.html'});
-	});
+    document.querySelector("#b2").addEventListener('click', function(event) {
+        fading();
+        event.preventDefault();
+        linkLocation = this.href;
+        hiding(function() { window.location = 'app.html' }, 100);
+    });
+
+    document.querySelector("#b3").addEventListener('click', function(event) {
+        fading();
+        event.preventDefault();
+        linkLocation = this.href;
+        hiding(function() { window.location = 'music.html' }, 100);
+    });
 
 });
