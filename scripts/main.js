@@ -60,10 +60,12 @@ let slider = function() {
 
 function hiding(func, el, sec) {
     document.querySelector(el).style.opacity = 1;
+    let start = new Date();
     setInterval(function() {
+        let timePassed = Date.now() - start;
         if (document.querySelector(el).style.opacity <= 0) {
             clearInterval(hiding);
-            func();
+            return func();
         }
         document.querySelector(el).style.opacity = document.querySelector(el).style.opacity - 0.05;
         console.log(document.querySelector(el).style.opacity);
