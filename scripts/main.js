@@ -41,16 +41,23 @@ let slider = function() {
 }
 
 function hiding(func, sec) {
-    var start = Date.now();
     document.querySelector("body").style.opacity = 1;
     setInterval(function() {
-        var timePassed = Date.now() - start;
-
         if (document.querySelector("body").style.opacity <= 0) {
             clearInterval(hiding);
             return func();
         }
         document.querySelector("body").style.opacity = document.querySelector("body").style.opacity - 0.05;
         console.log(document.querySelector("body").style.opacity);
+    }, sec)
+}
+
+function showing(el, sec) {
+    setInterval(function() {
+        if (document.querySelector(el).style.opacity >= 1) {
+            clearInterval(showing);
+        }
+        document.querySelector(el).style.opacity = document.querySelector(el).style.opacity + 0.5;
+        console.log(document.querySelector(el).style.opacity);
     }, sec)
 }
