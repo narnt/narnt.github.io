@@ -19,6 +19,24 @@ function fading() {
     }, 50);
 };
 
+function soundSwitch() {
+    let sound = document.createElement('div');
+    sound.classList.add('sound');
+    sound.innerHTML = '&#128264';
+    document.querySelector('.wrapper').appendChild(sound);
+    console.log(sound);
+    sound.addEventListener('click', function() {
+        if (audio.paused) {
+            audio.play();
+            sound.classList.remove('paused');
+        } else {
+            audio.pause();
+            sound.classList.add('paused');
+        }
+    })
+}
+soundSwitch();
+
 let slider = function() {
     let i = 0;
     document.querySelector("#backSlide").addEventListener('click', function() {
@@ -40,15 +58,15 @@ let slider = function() {
     })
 }
 
-function hiding(func, sec) {
-    document.querySelector("body").style.opacity = 1;
+function hiding(func, el, sec) {
+    document.querySelector(el).style.opacity = 1;
     setInterval(function() {
-        if (document.querySelector("body").style.opacity <= 0) {
+        if (document.querySelector(el).style.opacity <= 0) {
             clearInterval(hiding);
-            return func();
+            func();
         }
-        document.querySelector("body").style.opacity = document.querySelector("body").style.opacity - 0.05;
-        console.log(document.querySelector("body").style.opacity);
+        document.querySelector(el).style.opacity = document.querySelector(el).style.opacity - 0.05;
+        console.log(document.querySelector(el).style.opacity);
     }, sec)
 }
 
