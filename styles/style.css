@@ -1543,7 +1543,7 @@ a {
     top: -85px;
     right: 30px;
     background-image: url(../images/pion.gif);
-    display: none;
+    opacity: 0;
 }
 
 .out {

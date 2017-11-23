@@ -60,9 +60,7 @@ let slider = function() {
 
 function hiding(func, el, sec) {
     document.querySelector(el).style.opacity = 1;
-    let start = new Date();
     setInterval(function() {
-        let timePassed = Date.now() - start;
         if (document.querySelector(el).style.opacity <= 0) {
             clearInterval(hiding);
             return func();
@@ -72,12 +70,15 @@ function hiding(func, el, sec) {
     }, sec)
 }
 
-function showing(el, sec) {
+function showing(func, el, sec) {
+    i = 0;
     setInterval(function() {
         if (document.querySelector(el).style.opacity >= 1) {
             clearInterval(showing);
+            return func();
         }
-        document.querySelector(el).style.opacity = document.querySelector(el).style.opacity + 0.5;
+        document.querySelector(el).style.opacity = i;
+        i = i + 0.05;
         console.log(document.querySelector(el).style.opacity);
     }, sec)
 }
