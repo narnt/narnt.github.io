@@ -856,7 +856,7 @@ a {
     height: 450px;
     bottom: 0;
     left: 200px;
-    background-image: url(../images/annout.png);
+    background-image: url(../images/annoutall.png);
     background-size: 85%;
     background-repeat: no-repeat;
     overflow: auto;
@@ -883,7 +883,7 @@ a {
     background-size: auto;
     background-repeat: no-repeat;
     overflow: auto;
-    background-image: url(../images/annout.png);
+    background-image: url(../images/annoutall.png);
     animation-name: anim4;
     animation-duration: 6s;
     animation-iteration-count: infinite;
@@ -937,30 +937,23 @@ a {
 .wrapper2 .annout {
     bottom: 0;
     left: 420px;
-    width: 212px;
+    width: 202px;
     height: 500px;
+    background-image: url(../images/annoutall.png);
     background-size: auto;
-    background-image: url(../images/annout.png);
+    background-position: 0 0;
     animation-name: anim1;
     animation-duration: 4s;
     animation-iteration-count: infinite;
-    -moz-animation-name: anim1;
-    -moz-animation-duration: 4s;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-name: anim1;
-    -webkit-animation-duration: 4s;
-    -webkit-animation-iteration-count: infinite;
+    animation-timing-function: step-start;
 }
 
 @keyframes anim1 {
-    0% {
-        background-image: url(../images/annout.png);
-    }
     50% {
-        background-image: url(../images/annout1.png);
+        background-position-x: -208px;
     }
     100% {
-        background-image: url(../images/annout.png);
+        background-position-x: 0;
     }
 }
 
