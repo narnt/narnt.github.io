@@ -1,0 +1,7 @@
+extends modules/template.pug
+block main
+    .wrapper.wrapper1
+        - var nextPage = "page2"
+        include modules/textblock.pug
+append scripts
+    script(src="../scripts/script1.js")
