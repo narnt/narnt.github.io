@@ -37,7 +37,7 @@ function soundSwitch() {
 }
 soundSwitch();
 
-let slider = function() {
+let slider = function(el) {
     let i = 0;
     document.querySelector("#backSlide").addEventListener('click', function() {
         if (i > 1) {
@@ -51,7 +51,8 @@ let slider = function() {
             document.querySelector("#slide").innerText = proverbs[i];
             i++;
         } else if (i = proverbs.length) {
-            document.querySelector("#button-next").style.display = 'block';
+            document.querySelector("#slide").innerText = '';
+            document.querySelector(el).style.display = 'block';
             fading();
         }
         console.log(i);

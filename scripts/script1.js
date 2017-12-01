@@ -2,4 +2,4 @@ let proverbs = new Array('Шаги, шорохи, разговоры, взгля
 
 audioContent('1', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

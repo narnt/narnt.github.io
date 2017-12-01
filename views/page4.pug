@@ -1,0 +1,19 @@
+extends modules/template.pug
+block main
+    .wrapper.wrapper2
+        .dorigrey
+        .classmateleaf
+        .anntakeleaf
+        - var nextPage = "page2"
+        include modules/textblock.pug
+            #choice
+                a(href="page5-1.html")
+                    p.
+                        да, и меня это
+                        устраивает
+                a(href="page5.html")
+                    p.
+                        нет, но я не знаю,
+                        что мне с этим делать…
+append scripts
+    script(src="../scripts/script4.js")

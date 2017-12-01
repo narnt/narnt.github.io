@@ -2,4 +2,4 @@ let proverbs = new Array('Воздух какой-то странный. Или 
 
 audioContent('walk', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

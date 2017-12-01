@@ -3,5 +3,7 @@ block main
     .wrapper.wrapper1
         - var nextPage = "page2"
         include modules/textblock.pug
+            a(href=nextPage+".html")
+                #button-next дальше
 append scripts
     script(src="../scripts/script1.js")

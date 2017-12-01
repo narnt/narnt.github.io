@@ -2,4 +2,4 @@ let proverbs = new Array('— Привееет! Ты куда пропала? К
 
 audioContent('walk', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

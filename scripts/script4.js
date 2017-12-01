@@ -2,22 +2,24 @@ let proverbs = new Array('— Вот, позвони обязательно! —
 
 audioContent('walk', true);
 
-$(document).ready(function() {
-    $('#chapter').fadeOut(5000);
-    var i = 0;
-    $('#backSlide').click(function() {
-        i--;
-        $('#slide').text(proverbs[i - 1]);
-        console.log(i);
-    });
-    $('#nextSlide').click(function() {
-        if (i < proverbs.length) {
-            $('#slide').text(proverbs[i]);
-        } else if (i = proverbs.length) {
-            document.getElementById('choice').style.display = 'block';
-            fading();
-        }
-        console.log(i);
-        i++;
-    });
-});
+document.addEventListener('DOMContentLoaded', slider('#choice'));
+
+// $(document).ready(function() {
+//     $('#chapter').fadeOut(5000);
+//     var i = 0;
+//     $('#backSlide').click(function() {
+//         i--;
+//         $('#slide').text(proverbs[i - 1]);
+//         console.log(i);
+//     });
+//     $('#nextSlide').click(function() {
+//         if (i < proverbs.length) {
+//             $('#slide').text(proverbs[i]);
+//         } else if (i = proverbs.length) {
+//             document.getElementById('choice').style.display = 'block';
+//             fading();
+//         }
+//         console.log(i);
+//         i++;
+//     });
+// });
