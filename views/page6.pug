@@ -1,0 +1,9 @@
+extends modules/template.pug
+block main
+    .wrapper.fon
+        - var nextPage = "page6-2"
+        include modules/textblock.pug
+            a(href=nextPage+".html")
+                #button-next дальше
+append scripts
+    script(src="../scripts/script6.js")

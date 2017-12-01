@@ -1,0 +1,9 @@
+extends modules/template.pug
+block main
+    .wrapper.fridge
+        - var nextPage = "page7"
+        include modules/textblock.pug
+            a(href=nextPage+".html")
+                #button-next дальше
+append scripts
+    script(src="../scripts/script6-1.js")

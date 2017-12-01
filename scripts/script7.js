@@ -2,4 +2,4 @@ let proverbs = new Array('');
 
 audioContent('letter', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

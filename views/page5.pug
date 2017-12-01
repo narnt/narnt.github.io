@@ -1,0 +1,14 @@
+extends modules/template.pug
+block main
+    .wrapper.wrapper2
+        .dorigrey
+        .annout2
+        .classmate
+        .dorigrey
+        .annout
+        - var nextPage = "page6"
+        include modules/textblock.pug
+            a(href=nextPage+".html")
+                #button-next дальше
+append scripts
+    script(src="../scripts/script5.js")

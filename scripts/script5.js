@@ -2,4 +2,4 @@ let proverbs = new Array('И всё же…', '— Спасибо, — пряч�
 
 audioContent('2', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

@@ -2,4 +2,4 @@ let proverbs = new Array('Всё же я встаю и дохожу до х�
 
 audioContent('annethome', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));
