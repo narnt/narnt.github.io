@@ -1,0 +1,10 @@
+extends modules/template.pug
+block main
+    .wrapper.paper
+        p#letter Линия Поддержки 322-22-33-22
+        - var nextPage = "page8-1"
+        include modules/textblock.pug
+            a(href=nextPage+".html")
+                #button-next дальше
+append scripts
+    script(src="../scripts/script7.js")
