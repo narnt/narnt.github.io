@@ -2,4 +2,4 @@ let proverbs = new Array('Лизавета помогла мне подать з
 
 audioContent('orangery', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

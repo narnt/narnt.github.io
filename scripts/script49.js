@@ -2,4 +2,4 @@ let proverbs = new Array('Вот уже полчаса сижу в кабин�
 
 audioContent('4', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

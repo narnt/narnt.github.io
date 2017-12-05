@@ -2,4 +2,4 @@ let proverbs = new Array('— Привет, я не ожидала, что в�
 
 audioContent('kitchen', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

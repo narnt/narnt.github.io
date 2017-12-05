@@ -2,4 +2,4 @@ let proverbs = new Array('Оказавшись дома, первым делом
 
 audioContent('2', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

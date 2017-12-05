@@ -2,4 +2,4 @@ let proverbs = new Array('— Благодарю вас за ожидание, �
 
 audioContent('kabinet', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

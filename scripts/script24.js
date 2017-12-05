@@ -2,4 +2,4 @@ let proverbs = new Array('Итак, это единственное место, 
 
 audioContent('2', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

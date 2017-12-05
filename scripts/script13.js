@@ -2,4 +2,4 @@ let proverbs = new Array('Девушка проводила меня до каб
 
 audioContent('rythm', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

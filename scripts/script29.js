@@ -2,4 +2,4 @@ let proverbs = new Array('Мы прошли оранжерею, и я виж
 
 audioContent('greenhouse', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

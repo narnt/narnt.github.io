@@ -2,4 +2,4 @@ let proverbs = new Array('Выхожу за дверь — здесь ждет �
 
 audioContent('entry', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

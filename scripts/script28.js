@@ -2,4 +2,4 @@ let proverbs = new Array('— Похвально, — улыбается она,
 
 audioContent('window', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

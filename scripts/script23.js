@@ -21,4 +21,4 @@ let proverbs = new Array('На следующую ночь я внимател
 
 audioContent('2', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

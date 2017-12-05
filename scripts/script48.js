@@ -2,4 +2,4 @@ let proverbs = new Array('Беру справку из терминала, бе�
 
 audioContent('3', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

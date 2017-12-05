@@ -2,4 +2,4 @@ let proverbs = new Array('— Может, чаю? — решаюсь спрос�
 
 audioContent('entry', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

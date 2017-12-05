@@ -2,4 +2,4 @@ let proverbs = new Array('Набираю номер…', '— Здравству
 
 audioContent('telephone2', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

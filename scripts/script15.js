@@ -2,4 +2,4 @@ let proverbs = new Array('И еще полчаса очень странных
 
 audioContent('pan', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

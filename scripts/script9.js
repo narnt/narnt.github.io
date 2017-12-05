@@ -2,4 +2,4 @@ let proverbs = new Array('Что это?', 'Вскакиваю с кроват
 
 audioContent('woof', false);
 hiding(console.log, '#chapter', 100);
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

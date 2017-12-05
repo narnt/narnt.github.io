@@ -2,4 +2,4 @@ let proverbs = new Array('На бирже труда есть такой же т
 
 audioContent('3', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

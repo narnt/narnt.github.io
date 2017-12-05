@@ -2,4 +2,4 @@ let proverbs = new Array('Я дошла до принтера в глуби�
 
 audioContent('pad', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

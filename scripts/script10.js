@@ -2,4 +2,4 @@ let proverbs = new Array('За окном стоит девушка и вни�
 
 audioContent('window', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

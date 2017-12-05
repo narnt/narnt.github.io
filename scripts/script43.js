@@ -2,4 +2,4 @@ let proverbs = new Array('Забегаю в комнату, вытаскива
 
 audioContent('pad', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

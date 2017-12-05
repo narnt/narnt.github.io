@@ -2,4 +2,4 @@ let proverbs = new Array('Она снова вернулась с бумага
 
 audioContent('kabinet', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

@@ -2,4 +2,4 @@ let proverbs = new Array('Я долго искала терминал, наш�
 
 audioContent('5', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

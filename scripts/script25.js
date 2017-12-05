@@ -2,4 +2,4 @@ let proverbs = new Array('Тусклый свет. Я даже не сразу
 
 audioContent('orangery', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

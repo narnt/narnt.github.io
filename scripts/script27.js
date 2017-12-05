@@ -2,4 +2,4 @@ let proverbs = new Array('— Вы что-то ищете?', 'Я вздраги�
 
 audioContent('greenhouse', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

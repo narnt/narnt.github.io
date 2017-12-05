@@ -2,4 +2,4 @@ let proverbs = new Array('Пришлось вернуться домой. Но �
 
 audioContent('3', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

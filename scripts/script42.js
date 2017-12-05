@@ -2,4 +2,4 @@ let proverbs = new Array('— Можно спросить, что означае
 
 audioContent('entry', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

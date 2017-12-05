@@ -2,4 +2,4 @@ let proverbs = new Array('Я осталась в зале одна. Снов
 
 audioContent('kabinet2', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

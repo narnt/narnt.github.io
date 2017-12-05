@@ -2,4 +2,4 @@ let proverbs = new Array('Стук в окно. Дори проснулась 
 
 audioContent('woof', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

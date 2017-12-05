@@ -2,4 +2,4 @@ let proverbs = new Array('Женщина села за стол и стала 
 
 audioContent('greenhouse', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

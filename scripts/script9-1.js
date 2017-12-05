@@ -2,4 +2,4 @@ let proverbs = new Array('Просыпаюсь от звонка. Кто бы э
 
 audioContent('telephone', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

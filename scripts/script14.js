@@ -2,4 +2,4 @@ let proverbs = new Array('Захожу, и первое, что я вижу 
 
 audioContent('kabinet', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

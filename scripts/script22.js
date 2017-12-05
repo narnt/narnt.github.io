@@ -2,4 +2,4 @@ let proverbs = new Array('Дверь заперта на один оборот, 
 
 audioContent('bloom', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

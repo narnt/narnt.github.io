@@ -2,4 +2,4 @@ let proverbs = new Array('Я одеваюсь и беру Дори.', 'Де�
 
 audioContent('annettheme', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

@@ -2,4 +2,4 @@ let proverbs = new Array('— Проходите на кухню и приса
 
 audioContent('kitchen', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

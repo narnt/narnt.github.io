@@ -2,4 +2,4 @@ let proverbs = new Array('Наверное, это что-то вроде пси
 
 audioContent('kitchen', true);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

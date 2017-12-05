@@ -3,4 +3,4 @@ let proverbs = new Array('Я с усилием всматриваюсь в�
 audioContent('orangery', true);
 hiding(console.log, '#block1', 100);
 showing(console.log, '#pion', 100);
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));

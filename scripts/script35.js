@@ -2,4 +2,4 @@ let proverbs = new Array('Разговор закончился, но я та�
 
 audioContent('annettheme', false);
 
-document.addEventListener('DOMContentLoaded', slider);
+document.addEventListener('DOMContentLoaded', slider('#button-next'));
