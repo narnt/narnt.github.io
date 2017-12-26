@@ -1,5 +1,6 @@
 function titul() {
-  $("#titul").fadeIn(8000); $("#button-menu").fadeIn(8000);
-  }
+    showing(console.log, '#titul', 200);
+    showing(console.log, '#button-menu', 200);
+}
 
-  document.addEventListener("DOMContentLoaded", titul);
+document.addEventListener("DOMContentLoaded", titul);
