@@ -21,7 +21,7 @@ let View = {
             let choi = document.createElement('div');
             document.querySelector('.wrapper').appendChild(choi);
             choi.classList.add('choice');
-            choi.innerHTML = scenes.choice;
+            choi.innerHTML = scenes.choice; // разветвление сюжета
         }
     }
 }
