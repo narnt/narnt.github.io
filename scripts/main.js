@@ -1,14 +1,14 @@
-let audio = document.createElement("audio");
+// let audio = document.createElement("audio");
 
-function audioContent(fileName, loop) {
-    let canPlayMmp3 = !!audio.canPlayType && audio.canPlayType('audio/mp3') != "";
-    if (!canPlayMmp3) {
-        audio.src = "../music/" + fileName + ".ogg";
-    }
-    audio.src = "../music/" + fileName + ".mp3";
-    audio.loop = loop;
-    audio.play();
-}
+// function audioContent(fileName, loop) {
+//     let canPlayMmp3 = !!audio.canPlayType && audio.canPlayType('audio/mp3') != "";
+//     if (!canPlayMmp3) {
+//         audio.src = "../music/" + fileName + ".ogg";
+//     }
+//     audio.src = "../music/" + fileName + ".mp3";
+//     audio.loop = loop;
+//     audio.play();
+// }
 
 function fading() {
     let timer = setInterval(function() {
@@ -19,23 +19,23 @@ function fading() {
     }, 50);
 };
 
-function soundSwitch() {
-    let sound = document.createElement('div');
-    sound.classList.add('sound');
-    sound.innerHTML = '&#128264';
-    document.querySelector('.wrapper').appendChild(sound);
-    console.log(sound);
-    sound.addEventListener('click', function() {
-        if (audio.paused) {
-            audio.play();
-            sound.classList.remove('paused');
-        } else {
-            audio.pause();
-            sound.classList.add('paused');
-        }
-    })
-}
-soundSwitch();
+// function soundSwitch() {
+//     let sound = document.createElement('div');
+//     sound.classList.add('sound');
+//     sound.innerHTML = '&#128264';
+//     document.querySelector('.wrapper').appendChild(sound);
+//     console.log(sound);
+//     sound.addEventListener('click', function() {
+//         if (audio.paused) {
+//             audio.play();
+//             sound.classList.remove('paused');
+//         } else {
+//             audio.pause();
+//             sound.classList.add('paused');
+//         }
+//     })
+// }
+// soundSwitch();
 
 let slider = function(el) {
     let i = 0;

@@ -3,19 +3,22 @@ let backSwitch = document.getElementById('backSlide');
 
 function cli(sceneNum) {
     let i = 0;
-    let data = scenes;
     Switch.addEventListener('click', function() {
         Switch.classList.add('active');
-        if (i < data.length || i < phrases.length) {
-            View.render(Switch.previousElementSibling, data, sceneNum, i); //блок с текстом должен быть между кнопками
-            i++;
+        let data = scenes;
+        console.log(phrases.length);
+        View.render(Switch.previousElementSibling, data, sceneNum, i); //блок с текстом должен быть между кнопками
+        if (i <= phrases.length || i < data.length) {
             buttonNext.style.opacity = 0;
             console.log(phrases.length);
         } else if (i = phrases.length) {
             buttonNext.style.opacity = 1;
             console.log(phrases.length);
+            console.log(phrases);
+            i = 0;
             // showing(console.log, '#button-next', 100);
         }
+        i++;
     })
     backSwitch.addEventListener('click', function() {
         backSwitch.classList.add('active');
@@ -29,12 +32,14 @@ function cli(sceneNum) {
 
 let buttonNext = document.querySelector('#button-next');
 
-function bb() {
-    let n = 0;
-    buttonNext.addEventListener('click', () => {
+let n = 0;
+
+buttonNext.addEventListener('click', () => {
         cli(n);
+        View.wrapper(scenes, n);
+        // Audio.music(scenes, n);
         buttonNext.style.opacity = 0;
+
         n++;
     })
-}
-bb();
+    // Audio.soundSwitch;
