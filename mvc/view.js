@@ -6,27 +6,25 @@ sound.classList.add('sound');
 sound.innerHTML = '&#128264';
 document.querySelector('.wrapper').appendChild(sound);
 let View = {
-    content: function(model, prop) {
-        let items = [];
-        for (let key in model) {
-            items.push(model[key]); // каждая сцена
-        }
-        let scenes = items[prop];
-        let prev = items[prop - 1]; //предыдущая сцена
-        phrases = scenes.content;
-        return phrases;
-    },
     render: function(template, model, prop, text) {
+        buttonNext.style.opacity = 0;
         let items = [];
         for (let key in model) {
             items.push(model[key]); // каждая сцена
         }
-        let scenes = items[prop];
+        let scene = items[prop];
         let prev = items[prop - 1]; //предыдущая сцена
-        phrases = scenes.content; // массив с текстом сцены
+
+        console.log(scene);
+        if ('content' in scene) {
+            phrases = scene.content; // массив с текстом сцены
+        }
         template.appendChild(p);
         if (phrases[text] !== undefined) {
             p.innerText = phrases[text];
+        }
+        if (phrases[text] == undefined) {
+            buttonNext.style.opacity = 1;
         }
         if (scenes.choice) {
             let choi = document.createElement('div');
