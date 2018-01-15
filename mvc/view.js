@@ -26,7 +26,16 @@ let View = {
         if (phrases[text] == undefined) {
             buttonNext.style.opacity = 1;
         }
-        if (scenes.choice) {
+        if (scene.character) {
+            function characters(element, index, array) {
+                console.log('a[' + index + '] = ' + element);
+                let person = document.createElement('div');
+                document.querySelector('.wrapper').appendChild(person);
+                person.classList.add(array[index]);
+            }
+            scene.character.forEach(characters);
+        }
+        if (scene.choice) {
             let choi = document.createElement('div');
             document.querySelector('.wrapper').appendChild(choi);
             choi.classList.add('choice');
@@ -38,11 +47,11 @@ let View = {
         for (let key in model) {
             items.push(model[key]); // каждая сцена
         }
-        let scenes = items[prop];
+        let scene = items[prop];
         let prev = items[prop - 1];
-        if (scenes.wrapper) {
-            document.querySelector('.wrapper').classList.add(scenes.wrapper);
-            if (prop > 0 && scenes.wrapper != prev.wrapper) {
+        if (scene.wrapper) {
+            document.querySelector('.wrapper').classList.add(scene.wrapper);
+            if (prop > 0 && scene.wrapper != prev.wrapper) {
                 document.querySelector('.wrapper').classList.remove(prev.wrapper);
             }
         }

@@ -1,11 +1,11 @@
 let Switch = document.getElementById('nextSlide');
 let backSwitch = document.getElementById('backSlide');
 
-function cli(sceneNum) {
+function changeText(sceneNum) {
     let i = 0;
+    let data = scenes;
     Switch.addEventListener('click', function() {
         Switch.classList.add('active');
-        let data = scenes;
         View.render(Switch.previousElementSibling, data, sceneNum, i); //блок с текстом должен быть между кнопками
         i++;
     })
@@ -21,7 +21,7 @@ let buttonNext = document.querySelector('#button-next');
 let n = 0;
 
 buttonNext.addEventListener('click', () => {
-        cli(n);
+        changeText(n);
         View.wrapper(scenes, n);
         // Audio.music(scenes, n);
         buttonNext.style.opacity = 0;
