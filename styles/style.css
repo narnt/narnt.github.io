@@ -440,6 +440,7 @@ a {
     font-size: 25px;
     background-color: rgba(250, 250, 250, 0.80);
     border-radius: 20px;
+    z-index: 100;
 }
 
 #text {
